@@ -3,7 +3,7 @@ const app = express();
 const met = require('./met.js')
 const port = process.env.PORT || 3000;
 
-app.get('/student/:id', function(req, res) {
+app.get('/students/:id', function(req, res) {
     if( req.params.id != "A01193455" ) {
         return res.send({
           error: 'Error: Invalid ID',
